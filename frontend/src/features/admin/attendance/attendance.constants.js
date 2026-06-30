@@ -1,0 +1,1 @@
+export const ATTENDANCE_STATUSES = ["PRESENT", "LATE", "ABSENT"];
