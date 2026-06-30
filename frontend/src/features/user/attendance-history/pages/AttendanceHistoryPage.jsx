@@ -32,7 +32,7 @@ export function AttendanceHistoryPage() {
           type="date"
           value={dateFilter}
           onChange={(event) => setDateFilter(event.target.value)}
-          InputLabelProps={{ shrink: true }}
+          slotProps={{ inputLabel: { shrink: true } }}
         />
       </Stack>
 

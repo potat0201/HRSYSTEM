@@ -9,14 +9,14 @@ export function AttendanceFilter({ filters, onChange }) {
         type="date"
         value={filters.fromDate}
         onChange={(event) => onChange({ ...filters, fromDate: event.target.value })}
-        InputLabelProps={{ shrink: true }}
+        slotProps={{ inputLabel: { shrink: true } }}
       />
       <TextField
         label="To date"
         type="date"
         value={filters.toDate}
         onChange={(event) => onChange({ ...filters, toDate: event.target.value })}
-        InputLabelProps={{ shrink: true }}
+        slotProps={{ inputLabel: { shrink: true } }}
       />
       <TextField
         label="Search employee"

@@ -74,7 +74,7 @@ export function AttendanceFormDialog({ open, record, employees, loading, onClose
           <TextField
             label="Attendance date"
             type="date"
-            InputLabelProps={{ shrink: true }}
+            slotProps={{ inputLabel: { shrink: true } }}
             error={Boolean(errors.attendanceDate)}
             helperText={errors.attendanceDate?.message}
             {...register("attendanceDate")}
@@ -82,13 +82,13 @@ export function AttendanceFormDialog({ open, record, employees, loading, onClose
           <TextField
             label="Check-in time"
             type="datetime-local"
-            InputLabelProps={{ shrink: true }}
+            slotProps={{ inputLabel: { shrink: true } }}
             {...register("checkInTime")}
           />
           <TextField
             label="Check-out time"
             type="datetime-local"
-            InputLabelProps={{ shrink: true }}
+            slotProps={{ inputLabel: { shrink: true } }}
             {...register("checkOutTime")}
           />
           <TextField select label="Status" defaultValue={getDefaultValues(record).status} {...register("status")}>
